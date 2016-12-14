@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html ng-app="quizes" ng-controller="mainController">
+<head>
+	<meta http-equiv="Content-Type" content="text/html, charset=UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<title ng-cloak>Quiz App: {{8*8}}</title>
+
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+	<script src="mainController.js"></script>
+
+</head>
+<body >
+
+	{{headerMessage}} <a href="#/">Choose a quiz</a> 
+	<div ng-view></div>
+
+</body>
+
+</html>
