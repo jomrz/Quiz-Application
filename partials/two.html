@@ -1,0 +1,18 @@
+<div>
+<!-- this doc can be recycled -->
+	<h1>Two</h1>
+	<div>
+		<div ng-repeat="question in questions">
+			{{question.question}}
+			<ul>
+				<div ng-repeat="answer in question.answers">
+						<label><input type="checkbox" id="$index" value="{{answer}}"> {{answer}}</label><br>
+				</div>
+			</ul><br><br>
+		</div><br>
+		A message from PHP...
+		<div ng-bind-html="messageFromPhp"></div>
+		{{questions}}
+	</div>
+</div>
+ 
