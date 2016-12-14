@@ -1,0 +1,8 @@
+<h1>Choose a quiz</h1>
+<div>
+	<div ng-repeat="quiz in quizes">
+
+		<a href="#/questions/{{quiz.quiz_id}}">Quiz: "{{quiz.name}}" by {{quiz.author}}. Created: 
+		{{quiz.last_update}} </a>
+	</div><br>
+</div>
