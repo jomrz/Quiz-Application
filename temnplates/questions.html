@@ -1,0 +1,9 @@
+<div ng-repeat="question in questions">
+	{{question.question}}
+	<ul>
+		<div ng-repeat="answer in question.answers">
+			<!-- 		add index of question to id  > add T/F value to value -->
+			<input type="checkbox" value="{{answers.indexOf(answer)}}">{{answer}}<br>		
+		</div>
+	</ul><br>
+</div>
